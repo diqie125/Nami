@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nami - Solution & Inspiration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Favicon -->
+<link rel="icon" type="image/png" href="img/N_logo.png">
+
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #fff;
+      }
+
+      .logo-text {
+        font-weight: bold;
+        color: #333;
+      }
+
+      .logo-slogan {
+        font-size: 12px;
+        color: #888;
+      }
+
+      .offcanvas-title img {
+        height: 40px;
+        margin-right: 8px;
+      }
+
+      .nav-link {
+        font-weight: 500;
+        color: #333;
+      }
+
+      .nav-link:hover {
+        color: #d90429;
+      }
+
+      .search-icon {
+        font-size: 1.5rem;
+        color: #333;
+      }
+
+      .input-group .form-control {
+        border-radius: 20px 0 0 20px;
+      }
+
+      .input-group .btn {
+        border-radius: 0 20px 20px 0;
+      }
+
+      html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+html {
+    scroll-behavior: smooth;
+  }
+    </style>
+  </head>
+  <body>
+
+    <!-- Header dengan logo dan tombol -->
+    <div class="d-flex justify-content-between align-items-center p-2 px-3 border-bottom">
+      <!-- Sidebar trigger -->
+      <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#namiMenu" aria-controls="namiMenu">
+        ☰
+      </button>
+
+      <!-- Logo dan teks -->
+      <div class="text-center">
+      <img src="img/N_logo.png" alt="Logo Nami" style="height: 32px;">
+        <span class="logo-text">Nami</span><br>
+        <span class="logo-slogan text-center
+        ">Solution & Inspiration</span>
+      </div>
+
+      <!-- Search bar -->
+      <div class="input-group" style="max-width: 200px;">
+        <input type="search" class="form-control" placeholder="Cari..." aria-label="Search" />
+        <button type="submit" class="btn btn-outline-primary">Cari</button>
+      </div>
+    </div>
+
+    <!-- Offcanvas Sidebar Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="namiMenu" aria-labelledby="namiMenuLabel">
+    <div class="offcanvas-header">
+  <div class="offcanvas-title d-flex align-items-center gap-2" id="namiMenuLabel">
+    <img src="img/N_logo.png" alt="Logo Nami" style="height: 40px;">
+    <div>
+      <div class="h5 mb-0">Nami</div>
+      <small class="text-secondary">Solution & Inspiration</small>
+    </div>
+  </div>
+  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+
+      <div class="offcanvas-body">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#layananCollapse" role="button" aria-expanded="false" aria-controls="layananCollapse">
+              Layanan
+            </a>
+            <div class="collapse" id="layananCollapse">
+              <ul class="list-unstyled ms-3">
+                <li><a class="nav-link" href="#">Setting & Desain</a></li>
+                <li><a class="nav-link" href="#">Cetak</a></li>
+                <li><a class="nav-link" href="#">Bikin Website</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" style="margin-top:15px">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/N_logo.png" class="d-block w-100" style="height:560px" alt="desain banner">
+    </div>
+    <div class="carousel-item">
+      <img src="img/1.jpg" class="d-block w-100" style="height:560px"  alt="desain banner">
+    </div>
+    <div class="carousel-item">
+      <img src="img/2.jpg" class="d-block w-100" style="height:560px"  alt="desain banner">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<section class="text-center p-5 bg-warning bg-gradient text-dark" style="margin-top:35px">
+  <h1 class="display-5 fw-bold">Selamat Datang di Nami</h1>
+  <p class="lead">Percetakan dan Layanan Web Terpercaya di Karawang</p>
+  <a href="#layanan" class="btn btn-outline-dark mt-3">Lihat Layanan Kami</a>
+</section>
+
+<div class="container text-center">
+<section id="layanan" class="container my-5">
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img src="img/N_logo.png" alt="Cepat" width="60">
+      <h5>Proses Cepat</h5>
+      <p>Desain & cetak kilat sesuai kebutuhan.</p>
+    </div>
+    <div class="col-md-4">
+      <img src="img/N_logo.png" alt="Terjangkau" width="60">
+      <h5>Harga Terjangkau</h5>
+      <p>Harga bersaing untuk semua layanan.</p>
+    </div>
+    <div class="col-md-4">
+      <img src="img/N_logo.png" alt="Profesional" width="60">
+      <h5>Tim Profesional</h5>
+      <p>Desainer dan developer berpengalaman.</p>
+    </div>
+  </div>
+</section>
+</div>
+
+
+
+
+      <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Nami</h6>
+          <p>
+            - 
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Cetak Logo & Banner</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Buat Desain</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Pembuatan Web</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Tamplate Web</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i>Desa Jomin, Cikampek, Kabupaten Karawang, Jawa barat 4113</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            Nami@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> 089027529875</p>
+          <p><i class="fas fa-print me-3"></i> 089285798275</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2025 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Nami.com.id</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
